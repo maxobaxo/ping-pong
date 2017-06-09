@@ -1,11 +1,14 @@
 //business logic here:
-
+var pingPong = function(userInput) {
+  userInput = result;
+  return result;
+};
 
 //UI logic here:
 $(document).ready(function() {
   $(".main-form").submit.(function(event) {
     var userInput = $("input#entry").val();
-    var result = functName(userInput);
+    var result = pingPong(userInput);
     $(".result").text(result);
   });
 });
