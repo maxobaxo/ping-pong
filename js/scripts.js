@@ -1,7 +1,12 @@
 //business logic here:
 var pingPong = function(userInput) {
-  var userResult = userInput;
-  return userResult;
+
+  if (typeof userInput !== "number") {
+    alert("Please enter a number!");
+  } else {
+    var userResult = userInput;
+    return userResult;
+  }
 };
 
 //UI logic here:
