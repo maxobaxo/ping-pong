@@ -12,6 +12,10 @@ var pingPong = function(userInput) {
       $("ul").prepend("<li>ping</li>");
     } else if (parseInt(i) % 5 === 0) {
       $("ul").prepend("<li>pong</li>");
+    } else if (parseInt(i) % 3 === 0 && parseInt(i) % 5 === 0) {
+      $("ul").prepend("<li>pingpong</li>");
+    } else {
+    $("ul").prepend("<li>" + i + "</li>");
     }
   };
 
