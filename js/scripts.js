@@ -1,38 +1,30 @@
 //business logic here:
 var pingPong = function(userInput) {
 
-  if (isNaN(userInput) === true) {
-    alert("Please enter a number!");
-  }
-
-  var arrUpTo = [];
-  for (var i = userInput; i >= 1; i -= 1) {
-    if (parseInt(i) % 3 === 0) {
-      $("ul").prepend("<li>ping</li>");
-    } else if (parseInt(i) % 5 === 0) {
-      $("ul").prepend("<li>pong</li>");
-    } else if (parseInt(i) % 3 === 0 && parseInt(i) % 5 === 0) {
-      $("ul").prepend("<li>pingpong</li>");
+  var isNumber = function(userInput) {
+    var number = /^[a-zA-Z]+$/;
+    if (userInput.value.match(number)) {
+      return true;
     } else {
-    $("ul").prepend("<li>" + i + "</li>");
+      return false;
     }
   };
 
-  // var userString = userInput.toString();
-  // var userArr = [];
-  //
-  // for (var i = 0; i < userString.length; i++) {
-  //   userArr.push(userString[i]);
-  //   $("ul").prepend("<li>" + userArr[i] + "</li>");
-  // }
-
-
-
-  // var userArr = userInput.split("");
-  // for (var i = 0; i < userArr.length; i++) {
-  //   userArr[i] = parseInt(userArr[i]);
-  // }
-  // return userArr;
+  if (isNumber === false || isNaN(userInput) === true) {
+    alert("Please enter a number!");
+  } else {
+    for (var i = 1; i <= parseInt(userInput); i += 1) {
+      if (parseInt(i) % 3 === 0 && parseInt(i) % 5 === 0) {
+        $("ul").append("<li>pingpong</li>");
+      } else if (parseInt(i) % 5 === 0) {
+        $("ul").append("<li>pong</li>");
+      } else if (parseInt(i) % 3 === 0) {
+        $("ul").append("<li>ping</li>");
+      } else {
+        $("ul").append("<li>" + i + "</li>");
+      }
+    };
+  }
 };
 
 //UI logic here:
@@ -41,7 +33,7 @@ $(document).ready(function() {
     event.preventDefault();
 
     $("ul").empty();
-    var userInput = parseInt($("input#entry").val());
+    var userInput = $("input#entry").val();
     var result = pingPong(userInput);
     $(".result").show(result);
   });
