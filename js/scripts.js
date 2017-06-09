@@ -8,8 +8,10 @@ var pingPong = function(userInput) {
   var arrUpTo = [];
   $("ul").empty();
   for (var i = userInput; i >= 1; i -= 1) {
-    $("ul").prepend("<li>" + i + "</li>");
-  }
+    if (parseInt(i) % 3 === 0) {
+      $("ul").prepend("<li>ping</li>");
+    }
+  };
 
   // var userString = userInput.toString();
   // var userArr = [];
