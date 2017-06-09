@@ -1,7 +1,7 @@
 //business logic here:
 var pingPong = function(userInput) {
-  userInput = result;
-  return result;
+  var userResult = userInput;
+  return userResult;
 };
 
 //UI logic here:
