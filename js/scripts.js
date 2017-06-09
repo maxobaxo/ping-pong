@@ -6,7 +6,6 @@ var pingPong = function(userInput) {
   }
 
   var arrUpTo = [];
-  $("ul").empty();
   for (var i = userInput; i >= 1; i -= 1) {
     if (parseInt(i) % 3 === 0) {
       $("ul").prepend("<li>ping</li>");
@@ -41,6 +40,7 @@ $(document).ready(function() {
   $(".main-form").submit(function(event) {
     event.preventDefault();
 
+    $("ul").empty();
     var userInput = parseInt($("input#entry").val());
     var result = pingPong(userInput);
     $(".result").show(result);
