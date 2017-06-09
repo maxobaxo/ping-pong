@@ -6,6 +6,7 @@ var pingPong = function(userInput) {
   }
 
   var arrUpTo = [];
+  $("ul").empty();
   for (var i = userInput; i >= 1; i -= 1) {
     $("ul").prepend("<li>" + i + "</li>");
   }
