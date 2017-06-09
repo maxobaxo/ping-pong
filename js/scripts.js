@@ -10,6 +10,8 @@ var pingPong = function(userInput) {
   for (var i = userInput; i >= 1; i -= 1) {
     if (parseInt(i) % 3 === 0) {
       $("ul").prepend("<li>ping</li>");
+    } else if (parseInt(i) % 5 === 0) {
+      $("ul").prepend("<li>pong</li>");
     }
   };
 
