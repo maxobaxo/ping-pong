@@ -4,10 +4,18 @@
 by Max Scher
 
 ## Description ##
-
+This web application takes a number from a user returns a range of numbers from 1 to the chosen number, except:
+* Numbers divisible by 3 are replaced with "ping"
+* Numbers divisible by 5 are replaced with "pong"
+* Numbers divisible by 15 are replaced with "ping-pong"
+A user can enter a new number and see new results over and over again.
 
 ## Setup ##
-
+* Copy url from main repository page.
+* In terminal, on Desktop:
+  * $ git clone https://github.com/maxobaxo/ping-pong
+  * $ cd ping-pong
+  * $ open index.html
 
 ## Specifications ##
 * It can return the provided value.
