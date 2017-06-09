@@ -3,36 +3,41 @@
   <head>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="js/jquery-3.2.1.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Bubbler+One|Dancing+Script|Quicksand|Shadows+Into+Light" rel="stylesheet">
+  <script src="js/jquery-3.2.1.js"></script>
     <script src="js/scripts.js"></script>
     <title>Ping-Pong</title>
   </head>
-  <body>
+  <body class="bg-success">
     <div class="container">
       <div class="jumbotron">
         <h1>Ping-Pong</h1>
       </div>
-      <h3>Let's Play!</h3>
-      <h4>Rules:</h4>
-      <p>Ping Pong will count up to your number from 1 with the following exceptions:</p>
-      <ol>
-        <li>Numbers divisible by 3 become "ping"</li>
-        <li>Numbers divisible by 5 become "pong"</li>
-        <li>Numbers divisible by 3 and 5 become "pingpong"</li>
-      </ol>
-      <form class="main-form">
-        <div class="form-group">
-          <label for="entry">Enter your number here: </label>
-          <input id="entry">
-          <button type="submit" id="normal">Ping Pong!</button>
-          <button type="click" id="reverse">Pong Ping!</button>
-        </div>
-      </form>
-      <div class="result">
-        <ul>
+      <div class="result well">
+        <ul class="list-unstyled">
 
         </ul>
       </div>
+
+      <div class="content well">
+        <h3>Let's Play!</h3>
+        <h4>Rules:</h4>
+        <p>Ping Pong will count up to your number from 1 with the following exceptions:</p>
+        <ol>
+          <li>Numbers divisible by 3 become "ping"</li>
+          <li>Numbers divisible by 5 become "pong"</li>
+          <li>Numbers divisible by 3 and 5 become "pingpong"</li>
+        </ol>
+        <form class="main-form">
+          <div class="form-group">
+            <label for="entry">Enter your number here: </label>
+            <input id="entry">
+            <button type="submit" id="normal">Ping Pong!</button>
+            <button type="click" id="reverse">Pong Ping!</button>
+          </div>
+        </form>
+      </div>
+
 
     </div>
   </body>

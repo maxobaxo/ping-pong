@@ -15,11 +15,11 @@ var pingPong = function(userInput) {
   } else {
     for (var i = 1; i <= parseInt(userInput); i += 1) {
       if (parseInt(i) % 3 === 0 && parseInt(i) % 5 === 0) {
-        $("ul").append("<li>pingpong</li>");
+        $("ul").append("<li class='pingpong'>ping-pong</li>");
       } else if (parseInt(i) % 5 === 0) {
-        $("ul").append("<li>pong</li>");
+        $("ul").append("<li class='pong'>pong</li>");
       } else if (parseInt(i) % 3 === 0) {
-        $("ul").append("<li>ping</li>");
+        $("ul").append("<li class='ping'>ping</li>");
       } else {
         $("ul").append("<li>" + i + "</li>");
       }
@@ -42,11 +42,11 @@ var pongPing = function(userInput) {
   } else {
     for (var i = parseInt(userInput); i >= 1; i -= 1) {
       if (parseInt(i) % 3 === 0 && parseInt(i) % 5 === 0) {
-        $("ul").append("<li>pingpong</li>");
+        $("ul").append("<li class='pingpong'>ping-pong</li>");
       } else if (parseInt(i) % 5 === 0) {
-        $("ul").append("<li>pong</li>");
+        $("ul").append("<li class='pong'>pong</li>");
       } else if (parseInt(i) % 3 === 0) {
-        $("ul").append("<li>ping</li>");
+        $("ul").append("<li class='ping'>ping</li>");
       } else {
         $("ul").append("<li>" + i + "</li>");
       }
@@ -72,19 +72,3 @@ $(document).ready(function() {
     $(".result").show(result);
   });
 });
-
-
-
-// if ($("button").attr("#normal")) {
-//   alert("normal button pressed")
-//   $("ul").empty();
-//   var userInput = $("input#entry").val();
-//   var result = pingPong(userInput);
-//   $(".result").show(result);
-// } else {
-//   alert("reverse button pressed")
-//   $("ul").empty();
-//   var userInput = $("input#entry").val();
-//   var result = pongPing(userInput);
-//   $(".result").show(result);
-// }

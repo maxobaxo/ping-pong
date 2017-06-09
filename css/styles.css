@@ -1,0 +1,43 @@
+.jumbotron {
+  background-image: url("../img/paddles.jpg");
+  background-size: 100%;
+  background-position: top 65% center;;
+}
+h1 {
+  font-family: 'Quicksand', sans-serif;
+}
+.content {
+  margin: 2%;
+  margin-right: 40%;
+  width: auto;
+}
+
+.result {
+  display: none;
+  margin: auto;
+  margin-right: 2%;
+  float: right;
+  width: 34%;
+}
+
+ul {
+  font-family: 'Bubbler One', sans-serif;
+}
+.pingpong {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+}
+
+.ping {
+  font-family: 'Dancing Script', cursive;
+  font-size: 30px;
+}
+
+.pong {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 25px;
+}
+
+.list-unstyled {
+  text-align: center;
+}
