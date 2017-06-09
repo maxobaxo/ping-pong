@@ -10,7 +10,7 @@ by Max Scher
 
 
 ## Specifications ##
-* It can return the provided number.
+* It can return the provided value.
   * **Example Input:** 2
   * **Example Output:** 2
 * It can return an alert if the value provided is not a number.
