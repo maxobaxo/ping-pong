@@ -19,6 +19,10 @@ by Max Scher
 * It can count up to the provided number.
   * **Example Input:** 2
   * **Example Output:** [1, 2]
+* It will remove the old results upon a new submission.
+  * **ExamplePage:** [1, 2]
+  * **Example Input:** 5
+  * **Example Output:** [1, 2, 3, 4, 5]
 * It can replace values divisible by 3 with "ping".
   * **Example Input:** 3
   * **Example Output:** [1, 2, "ping"]
