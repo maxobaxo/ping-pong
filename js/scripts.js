@@ -3,9 +3,8 @@ var pingPong = function(userInput) {
   var number = parseInt(userInput);
   var integers = [];
 
-
   if ((Number.isInteger(number)) === false || isNaN(userInput) === true) {
-    integers.push("Please enter a number!!");
+    integers.push("<em>Please enter a number!!</em>");
     return integers;
   } else {
     for (var i = 1; i <= number; i += 1) {
@@ -28,7 +27,7 @@ var pongPing = function(userInput) {
   var integers = [];
 
   if ((Number.isInteger(number)) === false || isNaN(userInput) === true) {
-    integers.push("Please enter a number!!");
+    integers.push("<em>Please enter a number!!</em>");
     return integers;
   } else {
     for (var i = parseInt(userInput); i >= 1; i -= 1) {
@@ -54,7 +53,6 @@ $(document).ready(function() {
     $("ul").empty();
     var userInput = $("input#entry").val();
     var result = pingPong(userInput);
-    // var notANumber = "Please enter a number!!";
     result.forEach(function(item) {
       $("ul").append("<li>" + item + "</li>");
     });
@@ -66,8 +64,6 @@ $(document).ready(function() {
     $("ul").empty();
     var userInput = $("input#entry").val();
     var result = pongPing(userInput);
-    // var notANumber = $("ul").append("<li>Please enter a number!!</li>");
-    // var blah = isNumWhat(result);
     console.log(result);
     result.forEach(function(item) {
       $("ul").append("<li>" + item + "</li>");
