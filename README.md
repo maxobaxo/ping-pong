@@ -1,5 +1,5 @@
 # Ping-Pong #
-### A Code-Review Exercise for Epicodus | 06.09.17 ###
+### A classic coding exercise (a.k.a. Fizz-Buzz) | 06.09.17 ###
 
 by Max Scher
 
